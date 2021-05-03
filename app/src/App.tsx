@@ -2,6 +2,9 @@ import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
+import Geoloc from './pages/Geoloc';
+import Qrcode from './pages/Qrcode';
+import Fin from './pages/Fin';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -31,6 +34,15 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/">
           <Redirect to="/home" />
+        </Route>
+        <Route exact path="/geo">
+          <Geoloc />
+        </Route>
+        <Route exact path="/qr">
+          <Qrcode />
+        </Route>
+        <Route exact path="/fin">
+          <Fin />
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>
