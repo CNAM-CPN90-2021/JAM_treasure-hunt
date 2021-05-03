@@ -1,4 +1,4 @@
-import './Geoloc.css';
+import './style.css';
 import img from '../components/map.png';
 import { IonButton } from '@ionic/react';
 
@@ -17,9 +17,8 @@ const Geoloc = () => {
           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
       </p>
       </div>
-      <footer>
-        <IonButton>Précédent</IonButton>
-      </footer>
+        <IonButton className="button-scenario" href="text">Précédent</IonButton>
+        <IonButton className="button-scenario" href="qr">Suivant</IonButton>
     </div>
 
   );

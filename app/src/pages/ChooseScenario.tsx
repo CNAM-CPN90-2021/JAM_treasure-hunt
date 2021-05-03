@@ -1,4 +1,4 @@
-import './ChooseScenario.css';
+import './style.css';
 import { IonButton } from '@ionic/react';
 
 
