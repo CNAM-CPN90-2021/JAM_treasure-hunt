@@ -1,4 +1,5 @@
 import { IonButton, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import ChooseScenario from './ChooseScenario';
 import './Home.css';
 
 const Home: React.FC = () => {
@@ -6,7 +7,7 @@ const Home: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Blank</IonTitle>
+          <IonTitle>Treasure Hunt</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
@@ -16,6 +17,7 @@ const Home: React.FC = () => {
           </IonToolbar>
         </IonHeader>
         <IonButton href="geo"> Geoloc </IonButton> 
+        <ChooseScenario />
       </IonContent>
     </IonPage>
   );

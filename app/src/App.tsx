@@ -5,6 +5,8 @@ import Home from './pages/Home';
 import Geoloc from './pages/Geoloc';
 import Qrcode from './pages/Qrcode';
 import Fin from './pages/Fin';
+import Intro from './pages/Intro';
+import Text from './pages/Text';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -43,6 +45,12 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/fin">
           <Fin />
+        </Route>
+        <Route exact path="/intro">
+          <Intro />
+        </Route>
+        <Route exact path="/text">
+          <Text />
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>
