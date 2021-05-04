@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
+import './config';
+
+console.log(process.env);
 
 ReactDOM.render(
   <React.StrictMode>
