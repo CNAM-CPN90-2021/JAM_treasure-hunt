@@ -41,12 +41,17 @@ const Intro: React.FC<ContainerProps> = () => {
   } else {
   return (
     <div className="container">
+      <div className="hacker-image">
         <img src={HackerImage}/>
+      </div>
         <div className="intro-text">
         <p>{scenario.description}</p>
       </div>
-      <IonButton className="button-scenario" href="home">Précédent</IonButton>
-      <IonButton className="button-scenario" href="text">Suivant</IonButton>
+      <div className="progress-buttons">
+        <IonButton color="warning" className="button-scenario" href="home">Précédent</IonButton>
+        <IonButton color="warning" className="button-scenario" href="text">Suivant</IonButton>
+      </div>
+
     </div>
   );
 };

@@ -22,6 +22,7 @@ const Qrcode = () => {
               showToast("Code not found", 2000);
             }
           }}
+          color="danger"
         >
           Scan
         </IonButton>
@@ -34,12 +35,14 @@ const Qrcode = () => {
           laborum
         </p>
       </div>
-      <IonButton className="button-scenario" href="geo">
-        Précédent
-      </IonButton>
-      <IonButton className="button-scenario" href="fin">
-        Suivant
-      </IonButton>
+      <div className="progress-buttons-qr">
+        <IonButton color="warning" className="button-scenario" href="geo">
+          Précédent
+        </IonButton>
+        <IonButton color="warning" className="button-scenario" href="fin">
+          Suivant
+        </IonButton>
+      </div>
     </div>
   );
 };

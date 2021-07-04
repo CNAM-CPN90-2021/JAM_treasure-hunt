@@ -122,8 +122,10 @@ const Geoloc = () => {
           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
       </p>
       </div>
-        <IonButton className="button-scenario" href="text">Précédent</IonButton>
-        <IonButton className="button-scenario" href="qr">Suivant</IonButton>
+      <div className="progress-buttons">
+        <IonButton color="warning" className="button-scenario" href="text">Précédent</IonButton>
+        <IonButton color="warning" className="button-scenario" href="qr">Suivant</IonButton>
+      </div>
     </div>
 
   );

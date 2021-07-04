@@ -42,10 +42,11 @@ const ChooseScenario: React.FC<ContainerProps> = () => {
     return (
       <div className="container">
         <strong className="title-scenario">Please choose Scenario</strong>
-        {scenarios.map((scenario)=>
-          <IonButton className="button-scenario" href="intro">{scenario.titre}</IonButton>
-        )}
-        
+          <div className= "all-scenarios">
+          {scenarios.map((scenario)=>
+            <IonButton className="button-scenario" href="intro">{scenario.titre}</IonButton>
+          )}
+          </div>
       </div>
     );
   };
