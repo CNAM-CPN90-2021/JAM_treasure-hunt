@@ -25,7 +25,7 @@ const ChooseScenario: React.FC<ContainerProps> = () => {
         (result) => {
           setIsLoaded(true);
           setScenarios(result);
-          console.log(result);
+          console.log("Result= ",result);
         },
         (error) => {
           setIsLoaded(true);
@@ -43,8 +43,8 @@ const ChooseScenario: React.FC<ContainerProps> = () => {
       <div className="container">
         <strong className="title-scenario">Please choose Scenario</strong>
           <div className= "all-scenarios">
-          {scenarios.map((scenario)=>
-            <IonButton className="button-scenario" href="intro">{scenario.titre}</IonButton>
+          {scenarios.map((scenario, index)=>
+            <IonButton key={index} className="button-scenario" href="intro">{scenario.titre}</IonButton>
           )}
           </div>
       </div>
