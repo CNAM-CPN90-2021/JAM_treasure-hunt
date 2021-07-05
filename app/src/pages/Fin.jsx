@@ -1,5 +1,4 @@
 import './style.css';
-import img from '../components/qrcode.png';
 import { IonButton } from '@ionic/react';
 
 const Fin = () => {
