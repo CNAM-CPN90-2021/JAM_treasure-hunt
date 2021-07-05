@@ -123,7 +123,7 @@ const Geoloc = () => {
       </p>
       </div>
       <div className="progress-buttons">
-        <IonButton color="warning" className="button-scenario" href="text">Précédent</IonButton>
+        <IonButton color="warning" className="button-scenario" href="checkNumber">Précédent</IonButton>
         <IonButton color="warning" className="button-scenario" href="qr">Suivant</IonButton>
       </div>
     </div>

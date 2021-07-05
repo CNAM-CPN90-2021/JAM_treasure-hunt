@@ -7,6 +7,7 @@ import Qrcode from './pages/Qrcode';
 import Fin from './pages/Fin';
 import Intro from './pages/Intro';
 import Text from './pages/Text';
+import CheckNumber from './pages/checkNumber';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -51,6 +52,9 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/text">
           <Text />
+        </Route>
+        <Route exact path="/checkNumber">
+          <CheckNumber />
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>

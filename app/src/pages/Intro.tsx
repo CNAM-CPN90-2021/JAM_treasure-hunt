@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './style.css';
-import HackerImage from './hacker.png';
+import HackerImage from '../ressources/images/hacker.png';
 import { IonButton } from '@ionic/react';
 
 

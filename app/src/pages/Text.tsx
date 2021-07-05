@@ -52,7 +52,7 @@ const Text: React.FC<ContainerProps> = () => {
       </div>
       <div className="progress-buttons">
         <IonButton color="warning" className="button-scenario" href="intro">Précédent</IonButton>
-        <IonButton color="warning" className="button-scenario" href="geo">Suivant</IonButton>
+        <IonButton color="warning" className="button-scenario" href="checkNumber">Suivant</IonButton>
       </div>
     </div>
   );
