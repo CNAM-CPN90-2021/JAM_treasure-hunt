@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './style.css';
-import EnigmaImage from './enigma.png';
+import EnigmaImage from '../ressources/images/enigma.png';
 import { IonButton } from '@ionic/react';
 
 
