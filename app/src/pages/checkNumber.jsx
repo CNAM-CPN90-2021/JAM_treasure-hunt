@@ -5,8 +5,9 @@ const checkNumber = () => {
     return (
         <div className="container">
             <div className="checkNumber">
-                <p>À quoi est ce que sa correspond ?</p>
-                <p>Entre les nurméros dans le bonne ordres pour trouver à quoi ça correspond.</p>
+                <div className="checkNumText">
+                    <p>Un code est caché dans le texte précédent, à  quoi pourrait il correspondre ?</p>
+                </div>
                 <form action="">
                     <ol className="listInput">
                         <li>
