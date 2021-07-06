@@ -29,10 +29,7 @@ const Qrcode = () => {
       </div>
       <div className="text">
         <p>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum
+          <h2>Utilisez votre appareil photo pour scanner le code QR</h2>
         </p>
       </div>
       <div className="progress-buttons-qr">

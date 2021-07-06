@@ -115,11 +115,10 @@ const Geoloc = () => {
 
       <div className="text">
         <p>
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <h3>Ne te perds pas en chemin ;)</h3>
       </p>
         <p>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        Suivez les indications GPS et regardez la carte !
       </p>
       </div>
       <div className="progress-buttons">
