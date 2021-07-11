@@ -6,33 +6,29 @@ import { resultingClientExists } from 'workbox-core/_private';
 interface ContainerProps { }
 
 const ChooseScenario: React.FC<ContainerProps> = () => {
-
   const [error, setError] = useState(null);
-  const [isLoaded, setIsLoaded] = useState(false);
-  const [scenarios, setScenarios] = useState(
-     [ 
-        {
-          titre: ""
-        }
-     ]
-  );
+  const [isLoaded, setIsLoaded] = useState(true);
+  const [scenarios, setScenarios] = useState([
+    {
+      titre: "Test",
+    },
+  ]);
 
-
-  useEffect(() => {
-    fetch("/scenarioListJson")
-      .then(res => res.json())
-      .then(
-        (result) => {
-          setIsLoaded(true);
-          setScenarios(result);
-          console.log("Result= ",result);
-        },
-        (error) => {
-          setIsLoaded(true);
-          setError(error);
-        }
-      )
-  }, [])
+  // useEffect(() => {
+  //   fetch("/scenarioListJson")
+  //     .then(res => res.json())
+  //     .then(
+  //       (result) => {
+  //         setIsLoaded(true);
+  //         setScenarios(result);
+  //         console.log("Result= ",result);
+  //       },
+  //       (error) => {
+  //         setIsLoaded(true);
+  //         setError(error);
+  //       }
+  //     )
+  // }, [])
 
   if (error) {
     return <div>Error: {error.message}</div>;
@@ -42,15 +38,21 @@ const ChooseScenario: React.FC<ContainerProps> = () => {
     return (
       <div className="container">
         <strong className="title-scenario">Please choose Scenario</strong>
-          <div className= "all-scenarios">
-          {scenarios.map((scenario, index)=>
-            <IonButton key={index} className="button-scenario" href="intro">{scenario.titre}</IonButton>
-          )}
-          </div>
+        <div className="all-scenarios">
+          {scenarios.map((scenario, index) => (
+            <IonButton
+              key={index}
+              className="button-scenario"
+              routerLink="intro"
+            >
+              {scenario.titre}
+            </IonButton>
+          ))}
+        </div>
       </div>
     );
-  };
-}
+  }
+};
 
 
 export default ChooseScenario;
