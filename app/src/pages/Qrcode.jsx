@@ -14,7 +14,9 @@ const Qrcode = () => {
             const result = await startScan();
 
             console.log(result);
-            if (result.content === "https://www.youtube.com/embed/dQw4w9WgXcQ") {
+            if (
+              result.content === "https://www.youtube.com/embed/dQw4w9WgXcQ"
+            ) {
               showToast("Bravo, good response", 2000);
             } else if (result.content === "wrong_answer") {
               showToast("Bad response!", 2000);
@@ -33,10 +35,10 @@ const Qrcode = () => {
         </p>
       </div>
       <div className="progress-buttons-qr">
-        <IonButton color="warning" className="button-scenario" href="geo">
+        <IonButton color="warning" className="button-scenario" routerLink="geo">
           Précédent
         </IonButton>
-        <IonButton color="warning" className="button-scenario" href="fin">
+        <IonButton color="warning" className="button-scenario" routerLink="fin">
           Suivant
         </IonButton>
       </div>
